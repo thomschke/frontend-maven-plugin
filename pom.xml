@@ -9,8 +9,19 @@
 
     <groupId>com.github.eirslett</groupId>
     <artifactId>frontend-plugins</artifactId>
-    <version>1.7-SNAPSHOT</version>
+    <version>1.6-PATCHED</version>
     <packaging>pom</packaging>
+
+    <distributionManagement>
+        <repository>
+            <id>bintray</id>
+            <url>https://api.bintray.com/maven/thomschke/maven/frontend-plugins/;publish=1</url>
+        </repository>
+        <snapshotRepository>
+            <id>bintray</id>
+            <url>https://api.bintray.com/maven/thomschke/maven/frontend-plugins/;publish=1</url>
+        </snapshotRepository>
+    </distributionManagement>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -49,7 +60,6 @@
 
     <modules>
         <module>frontend-plugin-core</module>
-        <module>frontend-maven-plugin</module>
     </modules>
 
     <build>
